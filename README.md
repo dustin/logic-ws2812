@@ -3,6 +3,25 @@
 This plugin for [Saleae Logic][logic] allows you to decode WS5812 LED
 control signals.
 
+![logic analyzer](https://github.com/dustin/logic-ws2812/raw/master/docs/ws2812.png)
+
+## Exporting
+
+CSV export includes both the broken out values and a combined hex
+color value:
+
+```csv
+Time [s],LED,R,G,B,RGB
+0.023266583333333,0,1,0,108,#01006c
+0.023296916666667,1,1,0,96,#010060
+0.023326916666667,2,1,0,84,#010054
+0.023356916666667,3,1,0,72,#010048
+0.023386916666667,4,1,0,57,#010039
+0.023417000000000,5,1,0,45,#01002d
+0.023447000000000,6,1,0,33,#010021
+0.023477000000000,7,1,0,21,#010015
+```
+
 ## Building
 
 Download the [Logic SDK][sdk] and extract it somewhere on your
