@@ -5,22 +5,6 @@
 #include "WS2812AnalyzerSettings.h"
 #include <AnalyzerChannelData.h>
 
-/*
-| Symbol | Parameter                 |   Min | Typical | Max   | Units |
-| T0H    | 0 code ,high voltage time |   200 |     350 | 500   | ns    |
-| T1H    | 1 code ,high voltage time |   550 |     700 | 5,500 | ns    |
-| TLD    | data, low voltage time    |   450 |     600 | 5,000 | ns    |
-| TLL    | latch, low voltage time   | 6,000 |         |       | ns    |
-*/
-
-#define T0H_MIN 200
-#define T0H_MAX 500
-#define T1H_MIN 550
-#define T1H_MAX 5500
-#define TLD_MIN 450
-#define TLD_MAX 5500
-#define TLL_MIN 50000
-
 WS2812Analyzer::WS2812Analyzer()
     :   Analyzer2(),
         mSettings(new WS2812AnalyzerSettings()),
