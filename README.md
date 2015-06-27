@@ -42,7 +42,7 @@ Run the build script:
 
 ## Installing
 
-In the Develoepr tab in Logic preferences, specify the path for
+In the Developer tab in Logic preferences, specify the path for
 loading new plugins, then copy the built plugin into that location:
 
     cp release/* /path/specified/in/Logic/preferences
