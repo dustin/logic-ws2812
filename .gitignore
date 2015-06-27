@@ -1,0 +1,6 @@
+*.orig
+*~
+/debug/
+/include
+/lib
+/release/
