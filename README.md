@@ -5,6 +5,10 @@ control signals.
 
 ![logic analyzer](https://github.com/dustin/logic-ws2812/raw/master/docs/ws2812.png)
 
+I use an export of this to play back a captured strandtest output in a
+[bl.ocks.org block](http://bl.ocks.org/dustin/60cf9a97a71229512d02)
+(since I don't currently have the 60 LEDs it used by default).
+
 ## Exporting
 
 CSV export includes both the broken out values and a combined hex
