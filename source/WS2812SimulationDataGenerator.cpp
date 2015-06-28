@@ -37,11 +37,11 @@ U32 WS2812SimulationDataGenerator::GenerateSimulationData(U64 largest_sample_req
 
     mWS2812SimulationData.Advance(mClockGenerator.AdvanceByTimeS(2.0*TLL_MIN / 1000000000.0));
 
-    double frequency = 0.3;
+    double frequency = 0.1;
     while (mWS2812SimulationData.GetCurrentSampleNumber() < adjusted_largest_sample_requested) {
         if (lednum == N_LED) {
             mWS2812SimulationData.TransitionIfNeeded(BIT_LOW);
-            mWS2812SimulationData.Advance(mClockGenerator.AdvanceByTimeS(2.0*TLL_MIN / 1000000000.0));
+            mWS2812SimulationData.Advance(mClockGenerator.AdvanceByTimeS(.1));
             lednum = 0;
         }
 
