@@ -1,12 +1,12 @@
 #ifndef WS2812_SIMULATION_DATA_GENERATOR
 #define WS2812_SIMULATION_DATA_GENERATOR
 
-#include <random>
-
 #include <AnalyzerHelpers.h>
 
 #include <SimulationChannelDescriptor.h>
 class WS2812AnalyzerSettings;
+
+#define N_LED 60
 
 class WS2812SimulationDataGenerator
 {
@@ -25,9 +25,8 @@ protected:
     SimulationChannelDescriptor mWS2812SimulationData;
     ClockGenerator mClockGenerator;
 
-    std::mt19937 rgen;
-    std::exponential_distribution<> rdist;
-    double pulseLen;
+    int lednum;
+    int counter;
 
 };
 #endif //WS2812_SIMULATION_DATA_GENERATOR
