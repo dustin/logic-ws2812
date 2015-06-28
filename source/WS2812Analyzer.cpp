@@ -35,7 +35,9 @@ void WS2812Analyzer::WorkerThread()
     while (SamplesToNS(mWS2812->GetSampleOfNextEdge() - mWS2812->GetSampleNumber()) < TLL_MIN) {
         mWS2812->AdvanceToNextEdge();
     }
-    mWS2812->AdvanceToNextEdge(); // rising
+    while (!mWS2812->GetBitState() == BIT_HIGH) {
+        mWS2812->AdvanceToNextEdge(); // wait for rising
+    }
 
 
     U32 ledval = 0;
