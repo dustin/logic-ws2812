@@ -61,7 +61,7 @@ void WS2812Analyzer::WorkerThread()
         ledval |= (th > T1H_MIN ? 1 : 0);
 
         if (bitnum == 24) {
-            mResults->AddMarker(end - ((end - ledstart) / 2),
+            mResults->AddMarker(end - ((mid - ledstart) / 2),
                                 AnalyzerResults::Dot,
                                 mSettings->mInputChannel);
 
@@ -69,7 +69,7 @@ void WS2812Analyzer::WorkerThread()
             frame.mData1 = lednum;
             frame.mData2 = ledval;
             frame.mStartingSampleInclusive = ledstart;
-            frame.mEndingSampleInclusive = end;
+            frame.mEndingSampleInclusive = mid;
             mResults->AddFrame(frame);
             mResults->CommitResults();
             ReportProgress(frame.mEndingSampleInclusive);
