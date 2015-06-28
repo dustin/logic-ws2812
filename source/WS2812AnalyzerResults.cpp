@@ -94,9 +94,9 @@ void WS2812AnalyzerResults::GenerateTransactionTabularText(U64 transaction_id, D
 int WS2812AnalyzerResults::c(U32 v, int pos) {
     switch (pos) {
     case 0:
-        return v >> 16;
+        return (v & 0xff0000) >> 16;
     case 1:
-        return v >> 8 && 0xff;
+        return (v & 0xff00) >> 8;
     case 2:
         return v & 0xff;
     }
