@@ -6,7 +6,7 @@ control signals.
 ![logic analyzer](https://github.com/dustin/logic-ws2812/raw/master/docs/ws2812.png)
 
 I use an export of this to play back a captured strandtest output in a
-[bl.ocks.org block](http://bl.ocks.org/dustin/60cf9a97a71229512d02)
+[bl.ocks.org block](http://bl.ocks.org/dustin/e7207542c69ecbb53ca9)
 (since I don't currently have the 60 LEDs it used by default).
 
 ## Exporting
