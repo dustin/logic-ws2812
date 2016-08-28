@@ -1,6 +1,6 @@
 # WS2812 Analyzer for Saleae Logic
 
-This plugin for [Saleae Logic][logic] allows you to decode WS5812 LED
+This plugin for [Saleae Logic][logic] allows you to decode WS2812 LED
 control signals.
 
 ![logic analyzer](https://github.com/dustin/logic-ws2812/raw/master/docs/ws2812.png)
