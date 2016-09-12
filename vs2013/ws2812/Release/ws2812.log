@@ -1,0 +1,43 @@
+﻿Build started 12.09.2016 17:35:27.
+     1>Project "D:\Users\Peter\Downloads\logic-ws2812\vs2013\ws2812\ws2812.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Programme (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D WS2812_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\source\WS2812Analyzer.cpp ..\..\source\WS2812AnalyzerResults.cpp ..\..\source\WS2812AnalyzerSettings.cpp ..\..\source\WS2812SimulationDataGenerator.cpp
+         WS2812Analyzer.cpp
+     1>d:\users\peter\downloads\logic-ws2812\source\WS2812Analyzer.h(50): warning C4251: 'WS2812Analyzer::mSettings' : class 'std::auto_ptr<WS2812AnalyzerSettings>' needs to have dll-interface to be used by clients of class 'WS2812Analyzer'
+     1>d:\users\peter\downloads\logic-ws2812\source\WS2812Analyzer.h(51): warning C4251: 'WS2812Analyzer::mResults' : class 'std::auto_ptr<WS2812AnalyzerResults>' needs to have dll-interface to be used by clients of class 'WS2812Analyzer'
+     1>d:\users\peter\downloads\logic-ws2812\source\WS2812Analyzer.h(54): warning C4251: 'WS2812Analyzer::mSimulationDataGenerator' : class 'WS2812SimulationDataGenerator' needs to have dll-interface to be used by clients of class 'WS2812Analyzer'
+                 d:\users\peter\downloads\logic-ws2812\source\WS2812SimulationDataGenerator.h(12) : see declaration of 'WS2812SimulationDataGenerator'
+         WS2812AnalyzerResults.cpp
+     1>d:\users\peter\downloads\logic-ws2812\source\WS2812Analyzer.h(50): warning C4251: 'WS2812Analyzer::mSettings' : class 'std::auto_ptr<WS2812AnalyzerSettings>' needs to have dll-interface to be used by clients of class 'WS2812Analyzer'
+     1>d:\users\peter\downloads\logic-ws2812\source\WS2812Analyzer.h(51): warning C4251: 'WS2812Analyzer::mResults' : class 'std::auto_ptr<WS2812AnalyzerResults>' needs to have dll-interface to be used by clients of class 'WS2812Analyzer'
+     1>d:\users\peter\downloads\logic-ws2812\source\WS2812Analyzer.h(54): warning C4251: 'WS2812Analyzer::mSimulationDataGenerator' : class 'WS2812SimulationDataGenerator' needs to have dll-interface to be used by clients of class 'WS2812Analyzer'
+                 d:\users\peter\downloads\logic-ws2812\source\WS2812SimulationDataGenerator.h(12) : see declaration of 'WS2812SimulationDataGenerator'
+     1>..\..\source\WS2812AnalyzerResults.cpp(26): warning C4244: 'argument' : conversion from 'U64' to 'U32', possible loss of data
+     1>..\..\source\WS2812AnalyzerResults.cpp(30): warning C4244: 'argument' : conversion from 'U64' to 'U32', possible loss of data
+     1>..\..\source\WS2812AnalyzerResults.cpp(55): warning C4244: 'argument' : conversion from 'U64' to 'U32', possible loss of data
+     1>..\..\source\WS2812AnalyzerResults.cpp(56): warning C4244: 'argument' : conversion from 'U64' to 'U32', possible loss of data
+     1>..\..\source\WS2812AnalyzerResults.cpp(77): warning C4244: 'argument' : conversion from 'U64' to 'U32', possible loss of data
+         WS2812AnalyzerSettings.cpp
+     1>..\..\source\WS2812AnalyzerSettings.cpp(37): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         WS2812SimulationDataGenerator.cpp
+     1>d:\users\peter\downloads\logic-ws2812\source\WS2812Analyzer.h(50): warning C4251: 'WS2812Analyzer::mSettings' : class 'std::auto_ptr<WS2812AnalyzerSettings>' needs to have dll-interface to be used by clients of class 'WS2812Analyzer'
+     1>d:\users\peter\downloads\logic-ws2812\source\WS2812Analyzer.h(51): warning C4251: 'WS2812Analyzer::mResults' : class 'std::auto_ptr<WS2812AnalyzerResults>' needs to have dll-interface to be used by clients of class 'WS2812Analyzer'
+     1>d:\users\peter\downloads\logic-ws2812\source\WS2812Analyzer.h(54): warning C4251: 'WS2812Analyzer::mSimulationDataGenerator' : class 'WS2812SimulationDataGenerator' needs to have dll-interface to be used by clients of class 'WS2812Analyzer'
+                 d:\users\peter\downloads\logic-ws2812\source\WS2812SimulationDataGenerator.h(12) : see declaration of 'WS2812SimulationDataGenerator'
+     1>..\..\source\WS2812SimulationDataGenerator.cpp(48): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>..\..\source\WS2812SimulationDataGenerator.cpp(49): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>..\..\source\WS2812SimulationDataGenerator.cpp(50): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+       Link:
+         D:\Programme (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\Peter\Downloads\logic-ws2812\vs2013\ws2812\Release\ws2812.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\Users\Peter\Downloads\SaleaeAnalyzerSdk-1.1.32\SaleaeAnalyzerSdk-1.1.32\lib" Analyzer.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\Peter\Downloads\logic-ws2812\vs2013\ws2812\Release\ws2812.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\Peter\Downloads\logic-ws2812\vs2013\ws2812\Release\ws2812.lib" /MACHINE:X86 /SAFESEH /DLL Release\WS2812Analyzer.obj
+         Release\WS2812AnalyzerResults.obj
+         Release\WS2812AnalyzerSettings.obj
+         Release\WS2812SimulationDataGenerator.obj
+            Creating library D:\Users\Peter\Downloads\logic-ws2812\vs2013\ws2812\Release\ws2812.lib and object D:\Users\Peter\Downloads\logic-ws2812\vs2013\ws2812\Release\ws2812.exp
+         Generating code
+         Finished generating code
+         ws2812.vcxproj -> D:\Users\Peter\Downloads\logic-ws2812\vs2013\ws2812\Release\ws2812.dll
+     1>Done Building Project "D:\Users\Peter\Downloads\logic-ws2812\vs2013\ws2812\ws2812.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.70
