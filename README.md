@@ -44,6 +44,20 @@ Run the build script:
 
     ./build_analyzer.py
 
+### Building under Windows
+
+To build under Windows, a Visual Studio 2013 Project is included.
+
+You need to change the include and lib path of the Saleae SDK in the project. To do so, right click the project "ws2812" in the Solution Explorer, select Properties.
+
+In the "Configuration" combo box select "All Configurations"
+
+Insert your Saleae-SDK include path under "Configuration Properties/ VC++ Directories/ Include Directories"
+
+Insert your Saleae-SDK lib path under "Configration Properties/ Linker/ General/ Additional Library Directories"
+
+Select your platform (x64 or Win32) and build the project.
+	
 ## Installing
 
 In the Developer tab in Logic preferences, specify the path for
